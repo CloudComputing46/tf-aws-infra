@@ -1,19 +1,19 @@
 variable "aws_region" {
   description = "AWS region"
-  type = string
-  default = "us-east-1"
+  type        = string
+  default     = "us-east-1"
 }
 
 variable "project" {
   description = "Name of the project"
-  type = string
-  default = "my-vpc"
+  type        = string
+  default     = "my-vpc"
 }
 
 variable "vpc_cidr" {
   description = "CIDR block for the VPC"
-  type = string
-  default = "10.0.0.0/16"
+  type        = string
+  default     = "10.0.0.0/16"
 }
 
 variable "subnets" {
@@ -58,6 +58,6 @@ variable "subnets" {
 
 variable "internet_cidr_block" {
   description = "CIDR block for the internet"
-  type = string
-  default = "0.0.0.0/0"
+  type        = string
+  default     = "0.0.0.0/0"
 }
